@@ -6,10 +6,10 @@ public aspect MyAspect {
 
     Object around(): logAllMethod() {
         try {
-            System.out.println("Aspect...Before method");
+            System.out.println("Aspect...Before method " + thisJoinPoint.getSignature());
             return proceed();
         } finally {
-            System.out.println("Aspect...After method");
+            System.out.println("Aspect...After method " + thisJoinPoint.getSignature());
         }
     }
 

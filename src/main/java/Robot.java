@@ -1,11 +1,11 @@
 public class Robot {
 
     public void sayHello() {
-        System.out.println("aspect.Robot say hello");
+        System.out.println("Robot say hello");
     }
 
     public boolean sayBye() {
-        System.out.println("aspect.Robot say bye");
+        System.out.println("Robot say bye");
         return true;
     }
 }
